@@ -1,0 +1,7 @@
+@use '../utilities/variables' as *;
+
+.card {
+    border-radius: $radio-borde-base;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}

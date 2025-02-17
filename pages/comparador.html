@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technik - Comparador</title>
+  <link rel="stylesheet" href="../sass/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="../assets/img/LogoTechnik.png" alt="Logo de Technik" width="80">
+    <h1>Technik</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Comparador</a></li>
+        <li><a href="../about.html">Acerca de</a></li>
+        <li><a href="../contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content comparador-container">
+    <h2 class="titulo-comparador">¿Comprar en Argentina o importar?</h2>
+    <p class="subtitulo-comparador">Calculá el costo real de tus productos tecnológicos.</p>
+
+    <div class="calculadora-container">
+      <form class="formulario-comparador">
+        <div class="input-group">
+          <label>Nombre del producto</label>
+          <input type="text" placeholder="Ej: iPhone 15">
+        </div>
+
+        <div class="columnas-inputs">
+          <div class="input-group">
+            <label>Precio en ARS</label>
+            <input type="number" placeholder="0">
+          </div>
+
+          <div class="input-group">
+            <label>Precio en USD</label>
+            <input type="number" placeholder="0">
+          </div>
+        </div>
+
+        <button type="button" class="boton-calcular">Calcular</button>
+      </form>
+
+      <div class="resultados-container">
+        <div class="resultado-categoria">
+          <h3>Compra en Argentina</h3>
+          <div class="resultado-valor">ARS 0.00</div>
+        </div>
+
+        <div class="resultado-categoria">
+          <h3>Importación</h3>
+          <div class="resultado-valor">ARS 0.00</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Technik - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

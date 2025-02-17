@@ -1,0 +1,39 @@
+// style.scss
+
+// 1. Utilidades
+@use 'utilities/variables' as *;
+@use 'utilities/mixins' as *;
+@use 'utilities/maps' as *;
+
+// 2. Base
+@use 'base/reset' as *;
+@use 'base/tipografias' as *;
+
+// 3. Componentes
+@use 'components/card' as *;
+
+// 4. Layout
+@use 'layout/media/header' as *;
+@use 'layout/media/footer' as *;
+@use 'layout/media/main' as *;
+@use 'layout/media/media320' as *;
+
+
+
+// 6. Estilos globales adicionales
+body {
+  background-color: $color-fondo;
+}
+
+.btn-comparar {
+  background-color: $color-secundario;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: $radio-borde-base;
+  cursor: pointer;
+  @include transicion(background-color, $velocidad-transicion);
+
+  &:hover {
+    background-color: darken($color-secundario, 10%);
+  }
+}

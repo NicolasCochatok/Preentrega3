@@ -1,0 +1,11 @@
+
+    //  específico para pantallas <= 320px
+    @media (max-width: 20rem) {
+        .header nav ul {
+        flex-direction: column;
+        }
+    
+        .cards-section {
+        flex-direction: column;
+        }
+    }

@@ -1,0 +1,9 @@
+@mixin respond-to($size) {
+        @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+        }
+}
+
+@mixin transicion($propiedad: all, $duracion: $velocidad-transicion, $modo: ease) {
+        transition: #{$propiedad} #{$duracion} #{$modo};
+}
